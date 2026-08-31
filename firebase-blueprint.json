@@ -1,0 +1,34 @@
+{
+  "entities": {
+    "app_state": {
+      "title": "AppState",
+      "description": "Main document storing school info, roster, attendance records, and kas history for real-time online access across devices",
+      "type": "object",
+      "properties": {
+        "updatedAt": {
+          "type": "string",
+          "description": "Timestamp when state was last updated"
+        },
+        "sekolahInfo": {
+          "type": "object",
+          "description": "School title, logo, and subtitle configuration"
+        },
+        "roster": {
+          "type": "object",
+          "description": "Classes list, student list, and teacher list"
+        },
+        "attendance": {
+          "type": "object",
+          "description": "Attendance map keyed by date"
+        },
+        "kasHistory": {
+          "type": "array",
+          "description": "List of kas financial transaction entries"
+        }
+      },
+      "required": [
+        "updatedAt"
+      ]
+    }
+  }
+}
